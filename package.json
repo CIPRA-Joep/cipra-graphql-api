@@ -1,0 +1,32 @@
+{
+  "name": "cipra-graphql-api",
+  "version": "0.0.1",
+  "description": "A GraphQL API for a Database of Risk Objects",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js --out-file index-compiled.js",
+    "start": "nodemon --exec babel-node index.js",
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NCCN-CIPRA/cipra-graphql-api.git"
+  },
+  "author": "FOD Binnenlands Zaken - Nationaal Crisiscentrum - CIPRA",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/NCCN-CIPRA/cipra-graphql-api/issues"
+  },
+  "homepage": "https://github.com/NCCN-CIPRA/cipra-graphql-api#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.8.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
+}
